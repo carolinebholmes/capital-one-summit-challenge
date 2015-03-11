@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="exporter-version" content="Evernote Mac 6.0.6 (451290)"/><meta name="altitude" content="165.51904296875"/><meta name="author" content="caroline.b.holmes@gmail.com"/><meta name="created" content="2015-03-03 19:37:57 +0000"/><meta name="latitude" content="38.03242776445524"/><meta name="longitude" content="-78.51019558209748"/><meta name="source" content="desktop.mac"/><meta name="updated" content="2015-03-05 14:46:19 +0000"/><title>Untitled</title></head><body>
+<div>Tweet data presented in the form:</div>
+<div><b>Time</b>, ID, <b>Text</b>, <i>Retweets</i>, <b>GeoTag</b>, PlaceTag, Favorites, User Name, <b>User Location</b>, User ID, Time Zone, User Followers, User Statuses, User Friends, User Handle, HashTags in Tweet, UserMentions in Tweet</div>
+<div><br/></div>
+<div>create a Tweet obj with relevant data Tweet(time, text, retweets, geogtag, userlocation)</div>
+<ul>
+<li>have a way to handle empty data (such as no location given)</li>
+<li>implement comparable using time</li>
+</ul>
+<div>Parse input into list</div>
+<div><br/></div>
+<div>Popularity Rank: A list of the most tweeted about best picture nominees (ranked from 1-8)</div>
+<div>{birdman, whiplash, american sniper, the grand budapest hotel, the imitation game, selma, the theory of everything, boyhood}</div>
+<ul>
+<li>Fields used: <b>Text</b> (potentially <i>Retweets</i>)</li>
+<li>searching</li>
+<li style="display:inline;list-style:none;">
+<ul>
+<li>eliminate ‘the’s in titles since they will probably be truncated in tweets to remain under max character length</li>
+<li>ignore case</li>
+</ul>
+</li>
+</ul>
+<div><br/></div>
+<div>Winner Announcement Prediction: Hour and minute when the winner (Birdman) was mentioned on Twitter most frequently</div>
+<ul>
+<li>Fields used: <b>Time</b>, <b>Text</b></li>
+<li>Find all mentions of Birdman and add to list and then count</li>
+<li style="display:inline;list-style:none;">
+<ul>
+<li>Slow, requires going through tweet list, creating Birdman list, then </li>
+</ul>
+</li>
+<li>Go through each minute and count the occurrences</li>
+<li style="display:inline;list-style:none;">
+<ul>
+<li>start by setting the maxCount equal to the count in first minute and the maxCountTime to the first minute</li>
+<li>compare each subsequent minute’s count to maxCount</li>
+<li>if count &gt; maxCount update maxCount and maxCountTime</li>
+</ul>
+</li>
+</ul>
+<div><br/></div>
+<div>3) Location: A list of which states were the most active in tweeting about #TheOscars2015 (rank ordered from most active to least)</div>
+<ul>
+<li>Fields used: User Location or Geotag</li>
+</ul>
+<div><br/></div>
+<div>Parse data and count instances of proper words</div>
+<div><br/></div>
+<div>Criteria:</div>
+<div>Your application will be judged on its efficiency, clarity, and style.</div>
+</body></html>
