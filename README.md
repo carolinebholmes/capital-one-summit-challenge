@@ -1,5 +1,8 @@
 # Capital One Summit For Software Engineers Challenge
-My work for round 2 of the Capital One Summit for Software Engineers application
+
+My winning work for the Capital One Summit for Software Engineers coding challenge, part 2 of their application for their Summit for Software Engineers.
+
+The solution was written in Java with minimal optimizations done to improve speed. 
 
 The challenge is described in the following:
 
